@@ -36,3 +36,11 @@ class CalculatorApp:
         while True:
             print("\n[1] Add [2] Sub [3] Mult [4] Div")
             choice = input("Select Operation (1-4): ")
+            try:
+                if choice not in self.operations:
+                    print("Invalid Choice!")
+                    continue
+                num1 = float(input("Num 1: "))
+                num2 = float(input("Num 2: "))
+                print(f"Result: {self.operations[choice].calculate(num1, num2)}")
+
