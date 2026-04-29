@@ -31,4 +31,8 @@ class CalculatorApp:
             "4": Division()
         }
 
-        
+    def run(self):
+        print("--- MAANGAS CALCULATOR PRO ---")
+        while True:
+            print("\n[1] Add [2] Sub [3] Mult [4] Div")
+            choice = input("Select Operation (1-4): ")
