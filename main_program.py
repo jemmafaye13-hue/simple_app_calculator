@@ -21,3 +21,14 @@ class Division(Operation):
         if num2 == 0:
             raise ZeroDivisionError("Cannot divide by zero!")
         return num1 / num2
+
+class CalculatorApp:
+    def __init__(self):
+        self.operations = {
+            "1": Addition(),
+            "2": Subtraction(),
+            "3": Multiplication(),
+            "4": Division()
+        }
+
+        
