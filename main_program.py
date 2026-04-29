@@ -15,4 +15,9 @@ class Subtraction(Operation):
 class Multiplication(Operation):
     def calculate(self, num1, num2):
         return num1 * num2
-    
+
+class Division(Operation):
+    def calculate(self, num1, num2):
+        if num2 == 0:
+            raise ZeroDivisionError("Cannot divide by zero!")
+        return num1 / num2
