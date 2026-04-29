@@ -44,3 +44,10 @@ class CalculatorApp:
                 num2 = float(input("Num 2: "))
                 print(f"Result: {self.operations[choice].calculate(num1, num2)}")
 
+            except (ValueError, ZeroDivisionError) as e:
+                print(f"Error occurred: {e}")
+            finally:
+                if input("\nTry again? (y/n): ").lower() != 'y':
+                    print("Exiting... Salamat!")
+                    break
+
