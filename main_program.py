@@ -51,3 +51,7 @@ class CalculatorApp:
                     print("Exiting... Salamat!")
                     break
 
+if __name__ == "__main__":
+    app = CalculatorApp()
+    app.run()
+
